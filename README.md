@@ -24,11 +24,10 @@ Copy code
 from RelayController import RelayController
 
 # Replace 0x20 with the I2C address of your PCF8574 module
-relay_controller = RelayController(address=0x20)
+relay_controller = RelayController(address=0x27)
 Turn a relay on or off by specifying its number (1-4):
 
-python
-Copy code
+
 # Turn on relay 1
 relay_controller.on(1)
 
@@ -36,41 +35,31 @@ relay_controller.on(1)
 relay_controller.off(1)
 Toggle the state of a relay:
 
-python
-Copy code
+
 # Toggle relay 1
 relay_controller.toggle(1)
 Turn on all relays:
 
-python
-Copy code
+
 # Turn on all relays
 relay_controller.on()
 Turn off all relays:
 
-python
-Copy code
+
 # Turn off all relays
 relay_controller.off()
 Get the current state of the relays (as a binary string):
 
-python
-Copy code
+
 # Get the state of the relays
 state = relay_controller.get_state()
 print(state)  # Outputs a binary string like '0b11110000'
 Hardware Setup
 Make sure that the PCF8574 is properly connected to your Raspberry Pi's I2C pins (SDA and SCL), and that your relays are connected to the PCF8574. Check the datasheet for your specific relay module to ensure proper connections.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 Support
-For support, please open an issue on the GitHub project page or contact the maintainers directly.
-
-Be sure to replace placeholders like 0x20 with actual values that users should use based on their specific setup. Additionally, include any other prerequisites or setup steps that may be necessary for your particular library.
-
-
+For support, please open an issue on the GitHub project page.
 
 
 
