@@ -33,7 +33,6 @@ relay_controller.on(1)
 
 # Turn off relay 1
 relay_controller.off(1)
-Toggle the state of a relay:
 
 
 # Toggle relay 1
