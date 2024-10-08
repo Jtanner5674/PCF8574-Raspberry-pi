@@ -38,17 +38,15 @@ Toggle the state of a relay:
 
 # Toggle relay 1
 relay_controller.toggle(1)
-Turn on all relays:
+
 
 
 # Turn on all relays
 relay_controller.on()
-Turn off all relays:
 
 
 # Turn off all relays
 relay_controller.off()
-Get the current state of the relays (as a binary string):
 
 
 # Get the state of the relays
